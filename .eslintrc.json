@@ -1,0 +1,43 @@
+{
+    "extends": "eslint:recommended",
+    "ecmaFeatures": {
+        "ecmaVersion": 7,
+        "modules": true,
+        "experimentalObjectRestSpread": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-undef": 0,
+        "no-console": 0,
+        "quotes": 0,
+        "no-trailing-spaces": 0,
+        "no-unused-vars": 0,
+        "new-cap": 0,
+        "no-multi-spaces": 0,
+        "no-shadow": 0,
+        "camelcase": 0,
+        "no-unreachable": 2
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "globals": {
+        "define": true,
+        "require": true,
+        "exports": true,
+        "module": true,
+        "describe": true,
+        "before": true,
+        "beforeEach": true,
+        "after": true,
+        "afterEach": true,
+        "it": true,
+        "inject": true,
+        "expect": true
+    }
+}

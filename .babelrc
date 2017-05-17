@@ -1,0 +1,8 @@
+{ 
+  "presets": ["es2015", "babel-preset-stage-2"],
+  "plugins": [
+    "transform-es2015-destructuring",
+    "transform-object-rest-spread"
+  ],
+  "compact": false
+}

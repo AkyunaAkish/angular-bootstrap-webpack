@@ -1,0 +1,8 @@
+.alert(ng-class="[type ? 'alert-' + type : null]")
+  button.close(type='button', ng-if='dismissable', ng-click='$hide()')
+    i.shpart-fl.shpart-fl-cross37
+  i.fa(ng-class="[type ? 'fa-alert-' + type : null]")
+  |&nbsp;
+  strong(ng-bind-html='title')
+  |&nbsp;
+  span.label.label-alert-content(ng-bind-html='content')
