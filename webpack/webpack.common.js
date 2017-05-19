@@ -7,11 +7,6 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.json']
     },
-    resolveLoader: {
-        alias: {
-            "custom-apply-loader": path.join(__dirname, "my-loader.js")
-        }
-    },
     module: {
         rules: [{
                 test: /\.js$/,
@@ -28,7 +23,7 @@ module.exports = {
             },
             {
                 test: /\.(jade|pug)$/,
-                use: ['apply-loader', 'pug-loader']
+                use: 'pug-loader'
             },
             {
                 test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)(\?.*$|$)/,
