@@ -13,7 +13,7 @@ module.exports = webpackMerge(commonConfig, {
             './src/client/app.js'
         ]
     },
-    devtool: 'eval-source-map',
+    devtool: 'eval',
     output: {
         path: helpers.root('bundle'),
         filename: '[name].js'
